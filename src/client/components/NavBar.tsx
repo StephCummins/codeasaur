@@ -11,6 +11,7 @@ const NavBar = () => {
             to="about"
             smooth={true}
             spy={true}
+            offset={-250}
             duration={700}
           >
             ABOUT
@@ -24,6 +25,7 @@ const NavBar = () => {
             to="techStack"
             smooth={true}
             spy={true}
+            offset={-250}
             duration={700}
           >
             TECH STACK
@@ -37,6 +39,7 @@ const NavBar = () => {
             to="portfolio"
             smooth={true}
             spy={true}
+            offset={-250}
             duration={700}
           >
             PORTFOLIO
@@ -50,6 +53,7 @@ const NavBar = () => {
             to="connect"
             smooth={true}
             spy={true}
+            offset={-250}
             duration={700}
           >
             CONNECT

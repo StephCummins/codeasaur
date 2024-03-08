@@ -94,15 +94,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 50vh;
   text-align: center;
 
   h1 {
     font-size: 4rem;
+    margin-bottom: 40px;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -138,6 +139,73 @@ body {
   }
 }
 
+.fade {
+  background-image: linear-gradient(
+    transparent 12%,
+    currentColor 30%,
+    currentColor 70%,
+    transparent 86%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+
+  .homePage,
+  .aboutPage,
+  .techStackPage,
+  .portfolioPage,
+  .connectPage {
+    color: transparent;
+    margin-top: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+.aboutPage,
+.techStackPage,
+.portfolioPage,
+.connectPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.section {
+  border-radius: 5px;
+  margin-top: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+}
+
+@media (max-width: 1225px) {
+  .homePage {
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+}
+
 @media (max-width: 1100px) {
   .header {
     nav {
@@ -152,11 +220,28 @@ body {
   }
 }
 
+@media (max-width: 1000px) {
+  .homePage {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.15rem;
+    }
+  }
+}
+
 @media (max-width: 800px) {
+  body {
+    margin: 0 100px;
+  }
+
   .header {
     nav {
       li {
-        margin: 0px 5px;
+        margin: 0px 3px;
       }
       img {
         width: 250px;
@@ -164,18 +249,22 @@ body {
     }
   }
   .mainMenu {
-    font-size: 1.05rem;
+    font-size: 1rem;
     letter-spacing: 2px;
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 700px) {
+  body {
+    margin: 0 75px;
+  }
+
   .header {
     align-items: center;
 
     nav {
       li {
-        margin: 0px 3px;
+        margin: 0px 5px;
       }
       ul {
         flex-direction: column;
@@ -192,9 +281,24 @@ body {
       padding: 1.5px;
     }
   }
+
+  .homePage {
+    h1 {
+      font-size: 2.75rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.05rem;
+    }
+  }
 }
 
 @media (max-width: 550px) {
+  body {
+    margin: 0 50px;
+  }
+
   .header {
     nav {
       img {
@@ -214,5 +318,14 @@ body {
         font-size: 0.9rem;
       }
     }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }

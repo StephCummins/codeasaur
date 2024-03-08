@@ -12,6 +12,7 @@ const Header = () => {
           to="home"
           smooth={true}
           spy={true}
+          offset={-250}
           duration={700}
         >
           <Logo />

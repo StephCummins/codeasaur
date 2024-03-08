@@ -1,7 +1,11 @@
 import React from 'react';
 
 const TechStackPage = (): JSX.Element => {
-  return <h1>TECH STACK PAGE!</h1>;
+  return (
+    <section className="fade">
+      <div className="techStackPage"></div>
+    </section>
+  );
 };
 
 export default TechStackPage;
